@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A-Frame</title>
+    <script src="node_modules/aframe/dist/aframe.js"></script>
+
+    <script src="./columns.js"></script>
+
+</head>
+
+<body>
+
+    <a-scene>
+
+
+        <a-entity columns="position: -10 1.5 -10;
+            height: 3;
+            shiftX: 3;
+            shiftZ: 3;
+            countX: 10;
+            countZ: 10;
+            color: #fe9800;
+            width: 0.6
+            "></a-entity>
+
+
+        <a-box position="3 0 3" width="30" depth="30" height="0.01" color="#444"></a-box>
+        <a-box position="3 3 3" width="30" depth="30" height="0.01" color="#eee"></a-box>
+
+        <a-sky color="#9cb3ff"></a-sky>
+    </a-scene>
+
+</body>
+
+</html>
